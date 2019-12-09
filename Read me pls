@@ -1,2 +1,9 @@
 The server for this code is http://127.0.0.1:8887
+
+Instructions:
+On the top left, you can change the color of the background. Please press one to truly get the bubble experience since the first BG is static.
+On the bottom left, you can change the color of the buttons. Please be advised as once you press a button, you won't get white again.
+On the bottom right, you can 1. Customize centre reminder using the input box, or 2. Set up an alarm for a reminder. If you press start outright, you get 1 minute. If you press either of the minute timers, the timer will be reset to that time.
+On the top right is the current time.
+
 Have fun!

@@ -1,7 +1,7 @@
 //The server for this code is http://127.0.0.1:8887
 
 
-let inp, sub, redBut, blueBut, yelBut, purpBut, startB, isBG, defColor, reminder, frame, remindernoise, catte, catte2, bubbles; // variables
+let inp, sub, redBut, blueBut, yelBut, purpBut, startB, isBG, defColor, reminder, frame, remindernoise, catte, catte2, bubbles, stopPlay; // variables
 let alarmTimer = 60 // default alarmtimer set to 1 minute
 let styleBut = 'background-color'; // style of button
 let selfCareList = ["also, please eat something", "also, please drink something", "also, please blink", "also, please save your work", "also, please listen to something that calms you"] // little reminders~
@@ -28,7 +28,7 @@ function draw() { //DRAWING EVERYTHING!!!!!!
 	for (let i = 0; i < bubbleArray.length; i++){
 		bubbleArray[i].display(); // showing the bubbles
 		bubbleArray[i].move(); // moving the bubbles
-		if (bubbleArray[i].locY == -20){
+		if (bubbleArray[i].locY < -60){
 			bubbleArray[i].locY = random(height, height*2); // creating new bubbles when they reach the top
 		}
 	}
@@ -157,8 +157,8 @@ function timerCountdown() { // TIMER COUNTDOWN!!!!!!!!!!!!
     	push();
 		remindernoise.play();
 		stopPlay = createButton("Hey there. Remember to take a break!");
-		startB.style(styleBut, defColor);	
-		startB.style("border", "5px");
+		stopPlay.style(styleBut, defColor);	
+		stopPlay.style("border", "5px");
 		stopPlay.position(width/2 - 120, 125);
 		stopPlay.mousePressed(stopChime);
     }

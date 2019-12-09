@@ -6,13 +6,11 @@ let alarmTimer = 60 // default alarmtimer set to 1 minute
 let styleBut = 'background-color'; // style of button
 let selfCareList = ["also, please eat something", "also, please drink something", "also, please blink", "also, please save your work", "also, please listen to something that calms you"] // little reminders~
 let bubbleArray = []; // empty bubble array
-let starterBG = [(255, 105, 97), (178, 234, 255), (253, 253, 150), (177, 156, 217)] // starting BG colors
 
 function setup() { // SETTING UP SELECT VARIABLES AND THE INPUT!
 	createCanvas(500, 400); // setting up canvas
 	customReminder(); // setting up input for personal reminders
-	startBG = random(starterBG); // takes from starterBG
-	background(startBG); // starting BG
+	background(255, 105, 97); // set up background
 	defColor = color(255, 50); // default button color
 	reminder = random(selfCareList); // setting up little reminder~
 	remindernoise = loadSound("chime.wav"); // loading alarm

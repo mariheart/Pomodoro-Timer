@@ -24,6 +24,7 @@ function setup() { // SETTING UP SELECT VARIABLES AND THE INPUT!
 }
 
 function draw() { //DRAWING EVERYTHING!!!!!!
+	background(255, 105, 97); // set up background and makes sure bubbles stay bubbles and not floating hellscapes
 	constBG(); // constant BG so there's no draw-over
 	for (let i = 0; i < bubbleArray.length; i++){
 		bubbleArray[i].display(); // showing the bubbles
